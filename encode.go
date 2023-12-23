@@ -203,7 +203,7 @@ func (e *EncodeSession) run() {
 	args := []string{
 		"-stats",
 		"-reconnect", "1",
-		"-reconnect_at_eof", "1",
+		// "-reconnect_at_eof", "1",
 		"-reconnect_streamed", "1",
 		"-reconnect_delay_max", "5",
 		"-i", inFile,
