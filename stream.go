@@ -100,8 +100,8 @@ func (s *StreamingSession) readNext() error {
 		return err
 	}
 
-	// Timeout after 5s (Maybe this needs to be changed?)
-	timeOut := time.NewTimer(time.Second * 5)
+	// Timeout after 1s (Maybe this needs to be changed?)
+	timeOut := time.NewTimer(time.Second * 1)
 
 	// This will attempt to send on the channel before the timeout, which is 1s
 	select {
